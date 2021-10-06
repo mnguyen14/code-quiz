@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Quiz</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class = "container">
+
+        <div id = "homepage">
+        <button id = "startbtn">Start</button>
+        </div>
+
+        <div id = "quiz">
+            
+            <div id = "timer">Time left: </div>
+                
+                <div id = "questions">
+                    <p>Questions Placeholder</p>
+                </div>
+                    
+                <div id = "button-grid">
+                    <button id = "1" onclick = "questionAnswer('1')">1</button>
+                    <button id = "2" onclick = "questionAnswer('2')">2</button>
+                    <button id = "3" onclick = "questionAnswer('3')">3</button>
+                    <button id = "4" onclick = "questionAnswer('4')">4</button>
+                </div>
+                
+                <div id="result"></div>
+        
+        </div>
+        
+        <div id = "complete">
+
+            <div id = "finalScore"></div>
+            <input type = "text" size = "40" placeholder = "Enter initials:" name = "initials" id = "initials"/>
+            <button id = "submit-score">Submit Score</button>
+        
+        </div>
+        
+        <div id = high-score-container>
+            
+            <div id = "high-score-page">
+                
+                <div id = "high-score-header">
+                    <h2>User Initials</h2>
+                    <h2>Score</h2>
+                </div>
+            
+                <div id = "high-score-initials"></div>
+                <div id = "high-scores"></div>
+            
+            </div>
+        
+        </div>
+    
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>

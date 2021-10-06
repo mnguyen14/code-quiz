@@ -1,0 +1,123 @@
+:root {
+    --c1: #22466b;
+    --c2: #d2d2d2;
+    --font: "Roboto Mono", "SF Mono", "Fira Code" , "Fira Mono" ,monospace;
+}
+
+body {
+    background-color: var(--c1);
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#homepage {
+    align-items: center;
+}
+
+#button-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+}
+
+button {
+    font-family: var(--font);
+    color: var(--c1);
+    background-color: var(--c2);
+    font-size: 18px;
+    padding: 20px;
+    width: 200px;
+    margin-top: 3px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#timer {
+    font-family: var(--font);
+    color: var(--c1);
+    background-color: var(--c2);
+    font-size: 18px;
+    text-align: center;
+}
+
+p {
+    color: black;
+    font-size: 18px;
+    font-family: var(--font);
+    text-align: center;
+}
+
+#quiz,
+#result {
+    display: none;
+}
+
+#complete {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+#final-score {
+    font-size: 20px;
+    font-family: var(--font);
+    margin-bottom: 20px;
+}
+
+input {
+    text-align: center;
+}
+
+#high-score-container {
+    height: 100%;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#high-score-page {
+    display: none;
+    width: 50%;
+    border: solid;
+}
+
+#high-score-header {
+    background-color: var(--c2);
+    color: var(--c1);
+    font-family: var(--font);
+    display:flex;
+    justify-content: space-around;
+    border-bottom-style: outset;
+}
+
+#high-score-initials {
+    font-family: var(--font);
+    display: inline-block;
+}
+
+#high-scores {
+    font-family: var(--font);
+    font-size: 18px;
+}
+
+#initials {
+    font-family: var(--font);
+    font-size: 18px;
+}
+
+h2 {
+    font-family: var(--font);
+}
+
+li {
+    list-style-type: none;
+}
